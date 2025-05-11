@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif !important;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    overflow-x: hidden !important; /* Prevents overflow distortion */
+     overflow-y: auto; 
+}
+
+#nav-btn {
+    background-color: hsl(12, 88%, 59%);
+}
+
+#bg-svg {
+    position: absolute;
+    top: -80px; /* Adjust this value to push it further above the viewport */
+    right: -100px; /* Adjust this value to push it further beyond the viewport */
+    z-index: -1;
+}
+
+@media (max-width: 375px) {
+    #bg-svg {
+        top: -130px; /* Adjusted for smaller screens */
+        right: -130px; /* Adjusted for smaller screens */
+    }
+}
+
+
+
