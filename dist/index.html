@@ -60,8 +60,8 @@
     class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden">
   </div>
 
-    <!-- Hero Section -->
-    <!-- Background SVG -->
+    
+    <!-- Background SVG for hero section -->
     <div id="bg-svg" class="lg:w-1/2 mx-auto md:w-full">
       <img src="images/bg-tablet-pattern.svg" alt="" class="block w-full h-auto">
     </div>
@@ -91,6 +91,194 @@
             </div>
         </div>
     </section>
+    <!-- Hero Section End -->
+
+  <!--About us section-->
+   <div id="about-svg" class="lg:w-1/2 mx-auto md:w-full">
+      <img src="images/bg-tablet-pattern.svg" alt="" class="block w-full h-auto">
+    </div>
+
+<section class="px-6 py-16 md:py-24 lg:px-16">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row gap-12">
+      <!-- Left Column (Heading + Paragraph) -->
+      <div class="md:w-1/2 space-y-6 text-center md:text-left">
+                  <h1 class="text-4xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
+                    What's different about <br> Manage?
+                  </h1>
+                  <p class="text- md:text-lg text-gray-600 max-w-md mx-auto md:mx-0">
+                      Manage provides all the functionality your team needs, without the complexity.
+                      Our software is tailor-made for modern digital product teams.
+                  </p>
+                  
+                </div>
+
+      <!-- Right Column (Features List) -->
+      <div class="md:w-1/2 space-y-10">
+        <!-- Feature 1 -->
+        <div class="flex gap-6">
+          <div class="bg-orange-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0">
+            01
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Track company-wide progress</h3>
+            <p class="text-gray-600">
+              See how your day-to-day tasks fit into the wider vision. Go from tracking progress 
+              at the milestone level all the way done to the smallest of details.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="flex gap-6">
+          <div class="bg-orange-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0">
+            02
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Advanced built-in reports</h3>
+            <p class="text-gray-600">
+              Set internal delivery estimates and track progress toward company goals. 
+              Our customizable dashboard helps you build out the reports you need.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="flex gap-6">
+          <div class="bg-orange-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0">
+            03
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Everything you need in one place</h3>
+            <p class="text-gray-600">
+              Stop jumping from one service to another to communicate, store files, 
+              track tasks and share documents. Manage offers an all-in-one solution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--About us section end-->
+
+
+<!-- Testimonials Section with Carousel -->
+<section class="px-6 py-16 md:py-24 lg:px-16 bg-transparent">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section Heading -->
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-16">
+      What they've said
+    </h2>
+
+    <!-- Desktop Testimonials (Grid) -->
+    <div class="hidden md:grid grid-cols-3 gap-8 mb-16">
+      <!-- Testimonial 1 -->
+      <div class="bg-veryLightGray p-8 rounded-lg relative pt-20">
+        <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20">
+          <img src="https://randomuser.me/api/portraits/women/43.jpg" 
+               alt="Anisha Li" 
+               class="w-full h-full object-cover rounded-full">
+        </div>
+        <h4 class="font-bold text-gray-800 mb-4 text-center">Anisha Li</h4>
+        <p class="text-gray-600 text-center">
+          "Manage has supercharged our team's workflow. The visibility on larger milestones keeps everyone motivated."
+        </p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-veryLightGray p-8 rounded-lg relative pt-20">
+        <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+               alt="Ali Bravo" 
+               class="w-full h-full object-cover rounded-full">
+        </div>
+        <h4 class="font-bold text-gray-800 mb-4 text-center">Ali Bravo</h4>
+        <p class="text-gray-600 text-center">
+          "We've canceled many subscriptions since using Manage. No more cross-channel confusion."
+        </p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-veryLightGray p-8 rounded-lg relative pt-20">
+        <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" 
+               alt="Richard Watts" 
+               class="w-full h-full object-cover rounded-full">
+        </div>
+        <h4 class="font-bold text-gray-800 mb-4 text-center">Richard Watts</h4>
+        <p class="text-gray-600 text-center">
+          "Manage provides structure and keeps us focused. I recommend them to everyone!"
+        </p>
+      </div>
+    </div>
+
+    <!-- Mobile Carousel -->
+    <div class="md:hidden relative mb-12">
+      <div class="flex transition-transform duration-300 ease-in-out" id="testimonial-carousel">
+        <!-- Testimonial 1 -->
+        <div class="min-w-full px-4">
+          <div class="bg-veryLightGray p-8 rounded-lg relative pt-20">
+            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full overflow-hidden">
+              <img src="https://randomuser.me/api/portraits/women/43.jpg" 
+                   alt="Anisha Li" 
+                   class="w-full h-full object-cover">
+            </div>
+            <h4 class="font-bold text-gray-800 mb-4 text-center">Anisha Li</h4>
+            <p class="text-gray-600 text-center">
+              "Manage has supercharged our team's workflow. The visibility on larger milestones keeps everyone motivated."
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="min-w-full px-4">
+          <div class="bg-veryLightGray p-8 rounded-lg relative pt-20">
+            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full overflow-hidden">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+                   alt="Ali Bravo" 
+                   class="w-full h-full object-cover">
+            </div>
+            <h4 class="font-bold text-gray-800 mb-4 text-center">Ali Bravo</h4>
+            <p class="text-gray-600 text-center">
+              "We've canceled many subscriptions since using Manage. No more cross-channel confusion."
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="min-w-full px-4">
+          <div class="bg-veryLightGray p-8 rounded-lg relative pt-20">
+            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full overflow-hidden">
+              <img src="https://randomuser.me/api/portraits/men/65.jpg" 
+                   alt="Richard Watts" 
+                   class="w-full h-full object-cover">
+            </div>
+            <h4 class="font-bold text-gray-800 mb-4 text-center">Richard Watts</h4>
+            <p class="text-gray-600 text-center">
+              "Manage provides structure and keeps us focused. I recommend them to everyone!"
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Indicators -->
+      <div class="flex justify-center space-x-2 mt-6">
+        <button class="w-3 h-3 rounded-full bg-orange-500 carousel-indicator" data-index="0"></button>
+        <button class="w-3 h-3 rounded-full bg-gray-300 carousel-indicator" data-index="1"></button>
+        <button class="w-3 h-3 rounded-full bg-gray-300 carousel-indicator" data-index="2"></button>
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="text-center">
+      <button class="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-full shadow-md transition duration-300">
+        Get Started
+      </button>
+    </div>
+  </div>
+</section>
+ 
 
   
   

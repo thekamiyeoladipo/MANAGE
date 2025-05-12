@@ -31,10 +31,20 @@ body {
     z-index: -1;
 }
 
+#about-svg {
+    position: absolute;
+    top: 1150px; /* Adjust this value to push it further above the viewport */
+    left: -400px; /* Adjust this value to push it further beyond the viewport */
+    z-index: -1;
+}
+
 @media (max-width: 375px) {
     #bg-svg {
         top: -130px; /* Adjusted for smaller screens */
         right: -130px; /* Adjusted for smaller screens */
+    }
+    #about-svg {
+       display: none; /* Hide the SVG on smaller screens */
     }
 }
 

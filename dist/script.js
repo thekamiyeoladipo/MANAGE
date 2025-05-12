@@ -34,3 +34,32 @@ document.addEventListener('DOMContentLoaded', function() {
                 link.addEventListener('click', closeMenu);
             });
         });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const carousel = document.getElementById('testimonial-carousel');
+  const indicators = document.querySelectorAll('.carousel-indicator');
+  let currentIndex = 0;
+  
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    
+    indicators.forEach((indicator, index) => {
+      indicator.classList.toggle('bg-orange-500', index === currentIndex);
+      indicator.classList.toggle('bg-gray-300', index !== currentIndex);
+    });
+  }
+  
+  indicators.forEach(indicator => {
+    indicator.addEventListener('click', () => {
+      currentIndex = parseInt(indicator.dataset.index);
+      updateCarousel();
+    });
+  });
+  
+  // Auto-rotate carousel (optional)
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % 3;
+    updateCarousel();
+  }, 5000);
+});
