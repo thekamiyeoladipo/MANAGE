@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MANAGE</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
-<body class="relative bg-white">
+<body class="relative bg-transparent">
 
    
     <!-- Navigation Bar -->
@@ -17,7 +19,7 @@
         <div class="flex items-center">
           <img src="images/logo.svg" alt="">
         </div>
-
+    
         <!-- Desktop Navigation -->
         <div class="hidden md:flex space-x-8">
           <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Pricing</a>
@@ -26,12 +28,13 @@
           <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Careers</a>
           <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Community</a>
         </div>
-
+    
         <!-- CTA Button - Desktop -->
-        <button class="hidden md:block bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-6 rounded-full shadow-md transition duration-300">
+        <button
+          class="hidden md:block bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-6 rounded-full shadow-md transition duration-300">
           Get Started
         </button>
-
+    
         <!-- Mobile Menu Button -->
         <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
           <!-- Hamburger Icon -->
@@ -40,7 +43,7 @@
           <img src="images/icon-close.svg" alt="" class="hidden" id="menu-close-icon">
         </button>
       </div>
-
+    
       <!-- Mobile Navigation (Hidden by default) -->
       <div id="mobile-menu" class="md:hidden hidden absolute top-full left-0 right-0 bg-white z-50 px-6 py-4">
         <!-- Navigation Links -->
@@ -55,10 +58,8 @@
     </nav>
 
     <!-- Backdrop for click-away (Hidden by default) -->
-    <div
-    id="menu-backdrop" 
-    class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden">
-  </div>
+    <div id="menu-backdrop" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden">
+    </div>
 
     
     <!-- Background SVG for hero section -->
@@ -69,97 +70,102 @@
 
     <!-- Hero Section -->
     <section class="px-4 md:px-8 lg:px-16 py-16 md:py-24">
-        <div class="max-w-6xl mx-auto">
-            <div class="flex flex-col-reverse md:flex-row items-center gap-12">
-                <!-- Left Column (Content) -->
-                <div class="md:w-1/2 space-y-6 text-center md:text-left">
-                  <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
-                    Bring everyone together to build better products.
-                  </h1>
-                  <p class="text- md:text-lg text-gray-600 max-w-md mx-auto md:mx-0">
-                    Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
-                  </p>
-                  <button class="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-full shadow-md transition duration-300">
-                    Get Started
-                  </button>
-                </div>
-
-                <!-- Right Column (Illustration - placeholder) -->
-                <div class="md:w-1/2">
-                  <img src="images/illustration-intro.svg" alt="">
-                </div>
-            </div>
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+          <!-- Left Column (Content) -->
+          <div class="md:w-1/2 space-y-6 text-center md:text-left">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
+              Bring everyone together to build better products.
+            </h1>
+            <p class="text- md:text-lg text-gray-600 max-w-md mx-auto md:mx-0">
+              Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in
+              view.
+            </p>
+            <button
+              class="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-full shadow-md transition duration-300">
+              Get Started
+            </button>
+          </div>
+    
+          <!-- Right Column (Illustration - placeholder) -->
+          <div class="md:w-1/2">
+            <img src="images/illustration-intro.svg" alt="">
+          </div>
         </div>
+      </div>
     </section>
     <!-- Hero Section End -->
 
   <!--About us section-->
-   <div id="about-svg" class="lg:w-1/2 mx-auto md:w-full">
-      <img src="images/bg-tablet-pattern.svg" alt="" class="block w-full h-auto">
-    </div>
-
-<section class="px-6 py-16 md:py-24 lg:px-16">
-  <div class="max-w-6xl mx-auto">
-    <div class="flex flex-col md:flex-row gap-12">
-      <!-- Left Column (Heading + Paragraph) -->
-      <div class="md:w-1/2 space-y-6 text-center md:text-left">
-                  <h1 class="text-4xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
-                    What's different about <br> Manage?
-                  </h1>
-                  <p class="text- md:text-lg text-gray-600 max-w-md mx-auto md:mx-0">
-                      Manage provides all the functionality your team needs, without the complexity.
-                      Our software is tailor-made for modern digital product teams.
-                  </p>
-                  
-                </div>
-
-      <!-- Right Column (Features List) -->
-      <div class="md:w-1/2 space-y-10">
-        <!-- Feature 1 -->
-        <div class="flex gap-6">
-          <div class="bg-orange-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0">
-            01
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-gray-800 mb-3">Track company-wide progress</h3>
-            <p class="text-gray-600">
-              See how your day-to-day tasks fit into the wider vision. Go from tracking progress 
-              at the milestone level all the way done to the smallest of details.
-            </p>
-          </div>
+  <div id="about-svg" class="lg:w-1/2 mx-auto md:w-full">
+    <img src="images/bg-tablet-pattern.svg" alt="" class="block w-full h-auto">
+  </div>
+  
+  <section class="px-6 py-16 md:py-24 lg:px-16">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row gap-12">
+        <!-- Left Column (Heading + Paragraph) -->
+        <div class="md:w-1/2 space-y-6 text-center md:text-left">
+          <h1 class="text-4xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
+            What's different about <br> Manage?
+          </h1>
+          <p class="text- md:text-lg text-gray-600 max-w-md mx-auto md:mx-0">
+            Manage provides all the functionality your team needs, without the complexity.
+            Our software is tailor-made for modern digital product teams.
+          </p>
+  
         </div>
-
-        <!-- Feature 2 -->
-        <div class="flex gap-6">
-          <div class="bg-orange-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0">
-            02
+  
+        <!-- Right Column (Features List) -->
+        <div class="md:w-1/2 space-y-10">
+          <!-- Feature 1 -->
+          <div class="flex gap-6">
+            <div
+              class="bg-orange-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0">
+              01
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Track company-wide progress</h3>
+              <p class="text-gray-600">
+                See how your day-to-day tasks fit into the wider vision. Go from tracking progress
+                at the milestone level all the way done to the smallest of details.
+              </p>
+            </div>
           </div>
-          <div>
-            <h3 class="text-xl font-bold text-gray-800 mb-3">Advanced built-in reports</h3>
-            <p class="text-gray-600">
-              Set internal delivery estimates and track progress toward company goals. 
-              Our customizable dashboard helps you build out the reports you need.
-            </p>
+  
+          <!-- Feature 2 -->
+          <div class="flex gap-6">
+            <div
+              class="bg-orange-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0">
+              02
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Advanced built-in reports</h3>
+              <p class="text-gray-600">
+                Set internal delivery estimates and track progress toward company goals.
+                Our customizable dashboard helps you build out the reports you need.
+              </p>
+            </div>
           </div>
-        </div>
-
-        <!-- Feature 3 -->
-        <div class="flex gap-6">
-          <div class="bg-orange-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0">
-            03
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-gray-800 mb-3">Everything you need in one place</h3>
-            <p class="text-gray-600">
-              Stop jumping from one service to another to communicate, store files, 
-              track tasks and share documents. Manage offers an all-in-one solution.
-            </p>
+  
+          <!-- Feature 3 -->
+          <div class="flex gap-6">
+            <div
+              class="bg-orange-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center flex-shrink-0">
+              03
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Everything you need in one place</h3>
+              <p class="text-gray-600">
+                Stop jumping from one service to another to communicate, store files,
+                track tasks and share documents. Manage offers an all-in-one solution.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 <!--About us section end-->
 
 
@@ -176,9 +182,7 @@
       <!-- Testimonial 1 -->
       <div class="bg-veryLightGray p-8 rounded-lg relative pt-20">
         <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20">
-          <img src="images/avatar-anisha.png" 
-               alt="Anisha Li" 
-               class="w-full h-full object-cover rounded-full">
+          <img src="images/avatar-anisha.png" alt="Anisha Li" class="w-full h-full object-cover rounded-full">
         </div>
         <h4 class="font-bold text-gray-800 mb-4 text-center">Anisha Li</h4>
         <p class="text-gray-600 text-center">
@@ -189,9 +193,7 @@
       <!-- Testimonial 2 -->
       <div class="bg-veryLightGray p-8 rounded-lg relative pt-20">
         <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20">
-          <img src="images/avatar-ali.png" 
-               alt="Ali Bravo" 
-               class="w-full h-full object-cover rounded-full">
+          <img src="images/avatar-ali.png" alt="Ali Bravo" class="w-full h-full object-cover rounded-full">
         </div>
         <h4 class="font-bold text-gray-800 mb-4 text-center">Ali Bravo</h4>
         <p class="text-gray-600 text-center">
@@ -202,9 +204,7 @@
       <!-- Testimonial 3 -->
       <div class="bg-veryLightGray p-8 rounded-lg relative pt-20">
         <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20">
-          <img src="images/avatar-richard.png" 
-               alt="Richard Watts" 
-               class="w-full h-full object-cover rounded-full">
+          <img src="images/avatar-richard.png" alt="Richard Watts" class="w-full h-full object-cover rounded-full">
         </div>
         <h4 class="font-bold text-gray-800 mb-4 text-center">Richard Watts</h4>
         <p class="text-gray-600 text-center">
@@ -220,13 +220,12 @@
         <div class="min-w-full px-4">
           <div class="bg-veryLightGray p-10 rounded-lg relative pt-20">
             <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full overflow-hidden">
-              <img src="images/avatar-anisha.png" 
-                   alt="Anisha Li" 
-                   class="w-full h-full object-cover">
+              <img src="images/avatar-anisha.png" alt="Anisha Li" class="w-full h-full object-cover">
             </div>
             <h4 class="font-bold text-gray-800 mb-4 text-center">Anisha Li</h4>
             <p class="text-gray-600 text-center">
-              "Manage has supercharged our team's workflow. The visibility on larger milestones keeps everyone motivated."
+              "Manage has supercharged our team's workflow. The visibility on larger milestones keeps everyone
+              motivated."
             </p>
           </div>
         </div>
@@ -235,9 +234,7 @@
         <div class="min-w-full px-4">
           <div class="bg-veryLightGray p-8 rounded-lg relative pt-20">
             <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full overflow-hidden">
-              <img src="images/avatar-ali.png" 
-                   alt="Ali Bravo" 
-                   class="w-full h-full object-cover">
+              <img src="images/avatar-ali.png" alt="Ali Bravo" class="w-full h-full object-cover">
             </div>
             <h4 class="font-bold text-gray-800 mb-4 text-center">Ali Bravo</h4>
             <p class="text-gray-600 text-center">
@@ -250,9 +247,7 @@
         <div class="min-w-full px-4">
           <div class="bg-veryLightGray p-8 rounded-lg relative pt-20">
             <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full overflow-hidden">
-              <img src="images/avatar-richard.png" 
-                   alt="Richard Watts" 
-                   class="w-full h-full object-cover">
+              <img src="images/avatar-richard.png" alt="Richard Watts" class="w-full h-full object-cover">
             </div>
             <h4 class="font-bold text-gray-800 mb-4 text-center">Richard Watts</h4>
             <p class="text-gray-600 text-center">
@@ -272,44 +267,36 @@
 
     <!-- CTA Button -->
     <div class="text-center">
-      <button class="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-full shadow-md transition duration-300">
+      <button
+        class="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-full shadow-md transition duration-300">
         Get Started
       </button>
     </div>
   </div>
 </section>
+<!-- Testimonials Section ends here-->
  
 
 <!--CTA section-->
 <section class="relative bg-brightRed text-white py-20 overflow-hidden">
   <!-- Background Vector -->
-  <img 
-    id="cta-svg"
-    src="images/bg-tablet-pattern.svg" 
-    alt="" 
-    class=""
-    aria-hidden="true"
-  />
-  <img 
-    id="cta-svg-center"
-    src="images/bg-tablet-pattern.svg" 
-    alt="" 
-    class=""
-    aria-hidden="true"
-  />
- 
+  <img id="cta-svg" src="images/bg-tablet-pattern.svg" alt="" class="" aria-hidden="true" />
+  <img id="cta-svg-center" src="images/bg-tablet-pattern.svg" alt="" class="" aria-hidden="true" />
 
-   
+
+
 
   <!-- Flex container for layout -->
-  <div class="max-w-6xl mx-auto px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+  <div
+    class="max-w-6xl mx-auto px-6 md:px-10 lg:px-20 flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
     <!-- Text -->
-    <h2 class="text-3xl md:text-3xl lg:text-4xl font-bold text-center md:text-left leading-tight max-w-xl">
+    <h2 data-aos="fade-up" class="text-3xl md:text-3xl lg:text-4xl font-bold text-center md:text-left leading-tight max-w-xl">
       Simplify how your team <br> works today.
     </h2>
 
     <!-- Button -->
-    <button class="bg-white text-[#F3603C] font-bold py-3 px-8 rounded-full shadow-md hover:bg-[#ffe8e0] transition duration-300">
+    <button
+      class="bg-white text-[#F3603C] font-bold py-3 px-8 rounded-full shadow-md hover:bg-[#ffe8e0] transition duration-300">
       Get Started
     </button>
   </div>
@@ -317,6 +304,113 @@
 <!--CTA ends here-->
 
 
+<!--Footer starts here-->
+<footer class="bg-[#1D1E25] text-white py-14">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 lg:px-20">
+
+    <!-- Mobile Layout -->
+    <div class="flex flex-col items-center gap-10 md:hidden">
+      <!-- Newsletter Form -->
+      <form class="flex w-full max-w-md px-2">
+        <input 
+          type="email" 
+          placeholder="Updates in your inbox…" 
+          class="flex-1 py-2 px-4 rounded-full text-black outline-none"
+        />
+        <button 
+          type="submit" 
+          class="bg-brightRed text-white font-bold px-6 py-2 rounded-full ml-2 hover:opacity-90 transition">
+          Go
+        </button>
+      </form>
+
+      <!-- Link Groups (Side by Side in a Column) -->
+      <div class="flex justify-around w-full max-w-sm text-md">
+        <div class="flex flex-col gap-2 items-center">
+          <a href="#" class="hover:text-brightRed">Home</a>
+          <a href="#" class="hover:text-brightRed">Pricing</a>
+          <a href="#" class="hover:text-brightRed">Products</a>
+          <a href="#" class="hover:text-brightRed">About Us</a>
+        </div>
+        <div class="flex flex-col gap-2 items-center">
+          <a href="#" class="hover:text-brightRed">Careers</a>
+          <a href="#" class="hover:text-brightRed">Community</a>
+          <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+        </div>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="flex gap-4 justify-center text-md">
+        <a href="#"><img src="images/icon-facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="images/icon-youtube.svg" alt="YouTube" /></a>
+        <a href="#"><img src="images/icon-twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest" /></a>
+        <a href="#"><img src="images/icon-instagram.svg" alt="Instagram" /></a>
+      </div>
+
+      <!-- Logo -->
+      <img src="images/logo.svg" alt="Manage Logo" class="footer-logo" />
+
+      <!-- Copyright -->
+      <p class="text-sm text-gray-400 text-center">&copy; 2025 Manage. All rights reserved</p>
+      <p class="text-sm text-stone-500">Developed by Kamiye Oladipo</p>
+    </div>
+
+    <!-- Desktop Layout -->
+    <div class="hidden md:grid grid-cols-4 gap-10 items-start">
+      <!-- Logo + Socials -->
+      <div class="flex flex-col gap-10 justify-between h-full">
+        <img src="images/logo.svg" alt="Manage Logo" class="footer-logo" />
+        <div class="flex gap-4">
+          <a href="#"><img src="images/icon-facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src="images/icon-youtube.svg" alt="YouTube" /></a>
+          <a href="#"><img src="images/icon-twitter.svg" alt="Twitter" /></a>
+          <a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest" /></a>
+          <a href="#"><img src="images/icon-instagram.svg" alt="Instagram" /></a>
+        </div>
+      </div>
+
+      <!-- Links Group 1 -->
+      <div class="flex flex-col gap-3">
+        <a href="#" class="hover:text-brightRed">Home</a>
+        <a href="#" class="hover:text-brightRed">Pricing</a>
+        <a href="#" class="hover:text-brightRed">Products</a>
+        <a href="#" class="hover:text-brightRed">About Us</a>
+      </div>
+
+      <!-- Links Group 2 -->
+      <div class="flex flex-col gap-3">
+        <a href="#" class="hover:text-brightRed">Careers</a>
+        <a href="#" class="hover:text-brightRed">Community</a>
+        <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+      </div>
+
+      <!-- Newsletter + Copyright -->
+      <div class="flex flex-col gap-6 items-end">
+        <form class="flex w-full max-w-sm">
+          <input 
+            type="email" 
+            placeholder="Updates in your inbox…" 
+            class="flex-1 py-2 px-4 rounded-full text-black outline-none"
+          />
+          <button 
+            type="submit" 
+            class="bg-brightRed text-white font-bold px-6 py-2 rounded-full ml-2 hover:opacity-90 transition">
+            Go
+          </button>
+        </form>
+        <p class="text-sm text-gray-400">&copy; 2025 Manage. All rights reserved</p>
+        <p class="text-sm text-stone-500">Developed by Kamiye Oladipo</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!--Footer ends here-->
+
+
 
   
   
@@ -325,7 +419,14 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+  AOS.init();
+</script>
 </body>
 </html>
