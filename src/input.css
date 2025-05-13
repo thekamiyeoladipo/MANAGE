@@ -13,9 +13,10 @@
     outline: none;
     text-decoration: none;
     list-style-type: none;
+    
 }
 
-body {
+body, html {
     overflow-x: hidden !important;
     /* Prevents overflow distortion */
     overflow-y: auto !important;
